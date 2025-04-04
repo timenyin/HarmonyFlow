@@ -15,7 +15,7 @@
 <!-- ===============================================-->
 <!--    Document Title-->
 <!-- ===============================================-->
-<title>HarmonyFlow</title>
+<title>NexusFlow</title>
 
 <!-- ===============================================-->
 <!--    Favicons-->
@@ -43,6 +43,7 @@
 <link href="assets/css/theme-rtl.min.css" type="text/css" rel="stylesheet" id="style-rtl">
 <link href="assets/css/theme.min.css" type="text/css" rel="stylesheet" id="style-default">
 <link href="assets/css/user-rtl.min.css" type="text/css" rel="stylesheet" id="user-style-rtl">
+<link href="assets/css/animations.css" type="text/css" rel="stylesheet" id="user-style-rtl">
 <link href="assets/css/user.min.css" type="text/css" rel="stylesheet" id="user-style-default">
 <script>
     var phoenixIsRTL = window.config.config.phoenixIsRTL;

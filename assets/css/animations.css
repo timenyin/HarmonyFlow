@@ -1,0 +1,315 @@
+/* 
+***
+
+    Headre:  Assignment 10.2 - All animation 
+    Website Name: NexusFlow
+    Author: Harmony2k
+    Date:   20 April 2025
+*/
+
+/* Image Border Edge Animation */
+@keyframes borderEdgeAnimation {
+    0% {
+        border-image-source: linear-gradient(0deg, rgba(59, 130, 246, 0.8), rgba(59, 130, 246, 0.2), transparent 70%);
+        border-image-slice: 1 0 1 1; /* Exclude right side */
+    }
+    25% {
+        border-image-source: linear-gradient(90deg, rgba(59, 130, 246, 0.8), rgba(59, 130, 246, 0.2), transparent 70%);
+        border-image-slice: 1 0 1 1;
+    }
+    50% {
+        border-image-source: linear-gradient(180deg, rgba(59, 130, 246, 0.8), rgba(59, 130, 246, 0.2), transparent 70%);
+        border-image-slice: 1 0 1 1;
+    }
+    75% {
+        border-image-source: linear-gradient(270deg, rgba(59, 130, 246, 0.8), rgba(59, 130, 246, 0.2), transparent 70%);
+        border-image-slice: 1 0 1 1;
+    }
+    100% {
+        border-image-source: linear-gradient(360deg, rgba(59, 130, 246, 0.8), rgba(59, 130, 246, 0.2), transparent 70%);
+        border-image-slice: 1 0 1 1;
+    }
+}
+
+.animated-border-image {
+    border: 3px solid transparent;
+    border-radius: 8px;
+    animation: borderEdgeAnimation 4s linear infinite;
+    box-shadow: 0 0 15px rgba(59, 130, 246, 0.3);
+    transition: all 0.3s ease;
+}
+
+.animated-border-image:hover {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+    transform: scale(1.01);
+}
+
+/* Button Border Edge Animation */
+@keyframes buttonBorderAnimation {
+    0% {
+        border-image-source: linear-gradient(0deg, rgba(59, 130, 246, 0.8), rgba(59, 130, 246, 0.2), transparent 70%);
+        border-image-slice: 1;
+    }
+    25% {
+        border-image-source: linear-gradient(90deg, rgba(59, 130, 246, 0.8), rgba(59, 130, 246, 0.2), transparent 70%);
+        border-image-slice: 1;
+    }
+    50% {
+        border-image-source: linear-gradient(180deg, rgba(59, 130, 246, 0.8), rgba(59, 130, 246, 0.2), transparent 70%);
+        border-image-slice: 1;
+    }
+    75% {
+        border-image-source: linear-gradient(270deg, rgba(59, 130, 246, 0.8), rgba(59, 130, 246, 0.2), transparent 70%);
+        border-image-slice: 1;
+    }
+    100% {
+        border-image-source: linear-gradient(360deg, rgba(59, 130, 246, 0.8), rgba(59, 130, 246, 0.2), transparent 70%);
+        border-image-slice: 1;
+    }
+}
+
+.animated-border-button {
+    border: 1px solid transparent;
+    border-radius: 8px;
+    animation: buttonBorderAnimation 4s linear infinite;
+    /* box-shadow: 0 0 15px rgba(59, 130, 246, 0.3); */
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.animated-border-button:hover {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+    transform: scale(1.02);
+}
+
+/* text letter  */
+
+/* Timeline Dash Animation */
+@keyframes timelineDashFlow {
+    0% {
+        border-image: linear-gradient(
+            to bottom,
+            #0097eb 0%,
+            #0097eb 10%,
+            transparent 10%,
+            transparent 100%
+        ) 1 100%;
+    }
+    20% {
+        border-image: linear-gradient(
+            to bottom,
+            transparent 0%,
+            #0097eb 20%,
+            #0097eb 30%,
+            transparent 30%,
+            transparent 100%
+        ) 1 100%;
+    }
+    40% {
+        border-image: linear-gradient(
+            to bottom,
+            transparent 0%,
+            transparent 30%,
+            #0097eb 40%,
+            #0097eb 50%,
+            transparent 50%,
+            transparent 100%
+        ) 1 100%;
+    }
+    60% {
+        border-image: linear-gradient(
+            to bottom,
+            transparent 0%,
+            transparent 50%,
+            #0097eb 60%,
+            #0097eb 70%,
+            transparent 70%,
+            transparent 100%
+        ) 1 100%;
+    }
+    80% {
+        border-image: linear-gradient(
+            to bottom,
+            transparent 0%,
+            transparent 70%,
+            #0097eb 80%,
+            #0097eb 90%,
+            transparent 90%,
+            transparent 100%
+        ) 1 100%;
+    }
+    100% {
+        border-image: linear-gradient(
+            to bottom,
+            transparent 0%,
+            transparent 90%,
+            #0097eb 90%,
+            #0097eb 100%
+        ) 1 100%;
+    }
+}
+
+.animated-timeline-dash {
+    border-style: dashed;
+    border-color: rgba(0, 151, 235, 0.3);
+    border-width: 0 0 0 2px;
+    animation: timelineDashFlow 3s linear infinite;
+    position: absolute;
+    left: 11px;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+}
+
+/* Customize the tour direction background */
+.tour-direction-bg {
+    opacity: 0.1;
+    stroke: #0097eb;
+    stroke-width: 1.5;
+    animation: fadeInOut 4s ease-in-out infinite;
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0.1; }
+    50% { opacity: 0.3; }
+    100% { opacity: 0.1; }
+}
+
+/* Timeline dash animation */
+@keyframes dashMove {
+    0% {
+        height: 0;
+        top: 0;
+        opacity: 1;
+        border-left-color: #0097eb;
+    }
+    40% {
+        height: 40%;
+        opacity: 0.8;
+        border-left-style: dashed;
+    }
+    80% {
+        height: 80%;
+        opacity: 0.6;
+        border-left-style: dotted;
+    }
+    100% {
+        height: 100%;
+        top: 0;
+        opacity: 0.4;
+        border-left-color: #0097eb;
+    }
+}
+
+.tour-direction-line {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 19px;
+    z-index: -1;
+    border-left: 2px dashed var(--phoenix-border-color);
+    transition: all 0.5s ease;
+}
+
+.tour-direction-line.active {
+    border-left: 2px solid #0097eb;
+}
+
+.tour-direction-line.passed {
+    border-left: 2px dashed rgba(0, 151, 235, 0.3);
+}
+
+.timeline-point {
+    transition: all 0.5s ease;
+}
+
+.timeline-number {
+    transition: background-color 0.5s ease;
+}
+
+.timeline-point.active .timeline-number {
+    background-color: var(--phoenix-primary-lighter) !important;
+    transform: scale(1.1);
+}
+
+.tour-direction-line.border-start.border-dashed {
+    border-left-width: 2px;
+    --phoenix-border-color: rgba(0, 151, 235, 0.5);
+    pointer-events: none;
+}
+
+/* Timeline animations */
+@keyframes dashFlow {
+    0% {
+        height: 0;
+        opacity: 1;
+    }
+    50% {
+        height: 100%;
+        opacity: 1;
+    }
+    100% {
+        height: 100%;
+        opacity: 0.3;
+    }
+}
+
+@keyframes backgroundPulse {
+    0% {
+        opacity: 0.1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.3;
+        transform: scale(1.05);
+    }
+    100% {
+        opacity: 0.1;
+        transform: scale(1);
+    }
+}
+
+.tour-direction-line {
+    position: absolute;
+    height: 1rem;
+    bottom: -1rem;
+    left: 19px;
+    border-left: 2px var(--phoenix-border-style) var(--phoenix-border-color);
+    transition: all 0.5s ease;
+}
+
+.tour-direction-line.active {
+    animation: dashFlow 1.5s ease-in-out;
+    border-left-color: #0097eb;
+    border-left-style: dashed;
+}
+
+.tour-direction-bg {
+    opacity: 0.1;
+    stroke: #0097eb;
+    stroke-width: 1.5;
+    transition: all 0.5s ease;
+}
+
+.tour-direction-bg.active {
+    animation: backgroundPulse 2s ease-in-out;
+}
+
+.timeline-point {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.timeline-point.active {
+    transform: scale(1.05);
+    background: rgba(0, 151, 235, 0.1);
+}
+
+/* Override default border styles when animation is running */
+.tour-direction-line.border-start.border-dashed {
+    border-left-width: 2px;
+    --phoenix-border-color: rgba(0, 151, 235, 0.5);
+}
+
+
