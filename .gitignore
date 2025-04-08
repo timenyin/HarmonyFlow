@@ -1,0 +1,27 @@
+# IDE/Editor files
+.qodo
+.vscode/
+.idea/
+
+# Dependency directories
+/vendor/
+/node_modules/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Secret files
+/credentials/
+/env_files/
+/includes/client_secret.json
+/includes/google_auth.php
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
